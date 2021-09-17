@@ -3,9 +3,10 @@
 ## ALGORITHMIC PROBLEM SOLVING
 Algorithms - building blocks of algorithms (instruction/statements, state, control flow, functions) - notation (pseudo code, flowchart, programming language) </b> algorithmic problem solving, simple strategies for developing algorithms (iteration, recursion)
 
-Algorithm:
+### Algorithm:
 
-What is algorithm?
+What is algorithm? <
+>
 In mathematics and computer science, an algorithm  is a self-contained sequence of actions to be performed. 
 Algorithm can also be defined a set of rules that precisely defines a sequence of operations.
 Algorithms can perform calculation, data processing and automated reasoning tasks.
