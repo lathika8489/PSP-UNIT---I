@@ -85,10 +85,7 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 
 
 >## **Building Blocks**
-<p><div align="justify">&nbsp&nbsp An Algorithm is an effective method that can be expressed within a finite amount of space and time and in a well-defined formal language for calculating a <i><b>function</b></i>. Starting from an initial <i><b>State</b></i> and initial input, the <i><b>Instructions</b></i> decribe a computation that, when executed, proceeds through a finite number of well-defined sucessive states, eventually producing "output" and terminating at final ending stage.</div></p>
-<p><div align="justify">&nbsp&nbsp An <i><b>Instruction</b></i> is a single operation, that describes a computation. When it is executed it is converted from one state to other.</div></p>
-<p><div align="justify">&nbsp&nbsp The<i><b> State </b></i> of an algorithm is defined as its condition regarding stored data.The state shows its current values or contents</div></p>.
-<p><div align="justify">&nbsp&nbsp Control flow is the order in which individual statements, instructions or function calls of an algorithm are executed or evaluated. For Complex problems our goal is divide the task into smaller and simpler functions during algorithm design. So a set of related sequence os steps, part of a larger algorithm is known as <b><i>functions.</i></b></div></p>
+<p><div align="justify">&nbsp&nbsp An Algorithm is an effective method that can be expressed within a finite amount of space and time and in a well-defined formal language for calculating a <i><b>function</b></i>. Starting from an initial <i><b>State</b></i> and initial input, the <i><b>Instructions</b></i> decribe a computation that, when executed, proceeds through a finite number of well-defined sucessive states, eventually producing "output" and terminating at final ending stage. An <i><b>Instruction</b></i> is a single operation, that describes a computation. When it is executed it is converted from one state to other. The<i><b> State </b></i> of an algorithm is defined as its condition regarding stored data.The state shows its current values or contents.<b><i> Control flow </b></i> is the order in which individual statements, instructions or function calls of an algorithm are executed or evaluated. For Complex problems our goal is divide the task into smaller and simpler functions during algorithm design. So a set of related sequence os steps, part of a larger algorithm is known as <b><i>functions.</i></b></div></p>
 <p><div align="justify">&nbsp&nbsp We can express our needs to computer using the algorithms. Algorithms includes basic building blocks, That is used to express any kind of the task to the computer.
 <p><div align="justify">Building Blocks of Algorithms are,<br/>
 1. Instructions/ Statements<br/>
@@ -96,50 +93,129 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 3. Control Flow<br/>
 4. Functions. </p></div>
 
-### Instructions/ Statements
-<p><div align="justify">In computer programming, a statement is the smallest standalone element of an imperative programming language that expresses some action to be carried out. It is an instruction written in a high-level language that commands the computer to perform a specified action.</div></p>
-<p><div align="justify">There are two types of statement,<br/>
-● Simple Statement<br/>
-● Compound Statement<br/>
+### Statements:
+ 
+Statement is a single action in a computer.
+ 
+In a computer statements might include some of the following actions
+   input data-information given to the program
+   process data-perform operation on a given input
+   output data-processed result
+ 
+**State:**
+Transition from one process to another process under specified condition with in a time is called state.
+ 
+**Control flow:**
+The process of executing the individual statements in a given order is called control flow.
+The control can be executed in three ways
+1.              sequence
+2.              selection
+3.              iteration
+ 
+**Sequence:**
+Sequential control means that the steps of an algorithm are carried out in a sequential manner, where each step is executed exactly once.
+![Sequence](img/sequence.png) 
+```
+Example: Algorithm to convert Centigrade to Fahrenheit
 
-#### Simple Statements
+Step 1: Read the temperature in degree Centigrade
+Step 2: Convert the Centigrade to Fahrenheit using the formula
+			F= 9/5 * c+32
+Step 3: Print the Celsius and Fahrenheit value
+```
+```
+Example:
+Add two numbers:
+Step 1: Start
+Step 2: get a,b
+Step 3: calculate c=a+b
+Step 4: Display c
+Step 5: Stop
+```
+**Selection:**
+A selection statement causes the program control to be transferred to a specific part of the program based upon the condition.
+If the conditional test is true, one part of the program will be executed, otherwise it will execute the other part of the program.
+Algorithms can use selection to determine a different set of steps to execute based on a Boolean expression.If the conditional test is true, one part of the algorithm will be executed, otherwise it will execute the other part of the algorithm.
 
-It is used to represent single action need to be done.
+![Selection](img/selection.png)
+```
+# Example: Algorithm to find Greatest of two numbers
 
-● **assertion**: assert(ptr != NULL);
-○	Comparison
-● **assignment**: A:= A + 5
-○	Assigning a value 5 to A
-● **goto**: goto next;
-○	Sent the control to different block of same program
-● **return**: return 5;
-○	Return a value 5 after the execution of function
-● **call**: CLEARSCREEN()
-○	Calling the Function (ClearScreen) which performs clearing previous outputs from the computer screen
+Step 1: Read first numbers A
+Step 2: Read second number B
+Step 3: IF(A>B) then 
+			Print A is big
+		Else 
+			Print B is big
+```
+ 
+ 
+Example
+Write an algorithm to check whether he is eligible to vote?
+Step 1: Start
+Step 2: Get age
+Step 3: if age >= 18 print “Eligible to vote”
+Step 4: else print “Not eligible to vote”
+Step 6: Stop
+ 
+**Iteration:**
+In some programs, certain set of statements are executed again and again based upon conditional test. i.e. executed more than one time. This type of execution is called looping or iteration.
+Algorithms often use repetition to execute steps a certain number of times or until a certain condition is met.
 
-#### Compound Statement
+![Iteration](img/iteration.png)
 
-It is a set of statements, that used to perform a sequence of operations repeatedly or condition based executions.
+```
+Example: Print 'Hello world' 5 times
 
-●	block: begin integer NUMBER; WRITE('Number? '); READLN(NUMBER); A:= A*NUMBER end
-○	Set of statements
-●	do-loop: do { computation(&i); } while (i < 10);
-○	Looping a set of statements repeatedly until some condition is satisfied. We can’t predict when the condition become satisfiable. At least it will do the loop sequence once.
-●	for-loop: for A:=1 to 10 do WRITELN(A) end
-○	Looping a set of statements repeatedly until some condition is satisfied. We can run the loop for certain iterations. Prediction of loop termination is possible. 
-●	if-statement: if A > 3 then WRITELN(A) else WRITELN("NOT YET"); end
-○	Normally it contains two sets of statements. State or value is compared with a conditions if it is satisfied the “if” block will be executed otherwise else part will be executed.
-●	switch-statement: switch (c) { case 'a': alert(); break; case 'q': quit(); break; }
-○	It contains more than two blocks of statement each one has the conditions. When a program reaches a state with a value.  First hit of matching conditions block will be executed. If nothing matches then default block of statements will be executed
-●	while-loop: while NOT EOF DO begin READLN end
-○	Looping a set of statements repeatedly until some condition is satisfied. We can’t predict when the condition become satisfiable. This is loop is entry controlled. Control will enter into the loop only if condition is satisfiable. 
+Step 1 : Start
+Step 2 : Initialize the value of i as 1
+Step 3 : Check the condition i less than or equal to 5, if the condition is true goto step 3.1 else goto step 4
+         Step 3.1: Print “Hello World” and increment 
+         	         the value of i by 1
+         Step 3.2: Repeat the Step 3 until the condition is true
+Step 4 : Stop
 
-
-State:
-
-	In information technology and computer science, a program is described as stateful if it is designed to remember preceding events or user interactions; the remembered information is called the state of the system.
-If a program gets sufficient datas processed then it moves to another state. A successful execution of program include the reaching the  final state of the program.
-
+```
+ 
+Example
+ 
+Write an algorithm to print all natural numbers up to n
+Step 1: Start
+Step 2: get n value.
+Step 3: initialize i=1
+Step 4: if (i<=n) go to step 5 else go to step 7
+Step 5: Print i value and increment i value by 1
+Step 6: go to step 4
+Step 7: Stop
+ 
+**Functions:**
+ 
+   Function is a sub program which consists of block of code(set of instructions) that performs a particular task.
+   For complex problems, the problem is been divided into smaller and simpler tasks during algorithm design.
+ 
+#### Benefits of Using Functions
+ 
+<p>Reduction in line of code</p>
+<p>code reuse</p>
+<p>Better readability</p>
+<p>Information hiding</p>
+   Easy to debug and test
+   Improved maintainability
+ 
+Example:
+ 
+Algorithm for addition of two numbers using function
+Main function()
+Step 1: Start
+Step 2: Call the function add()
+Step 3: Stop
+ 
+sub function add()
+Step 1: Function start
+Step 2: Get a, b Values
+Step 3: add c=a+b
+Step 4: Print c
+Step 5: Return
 
 
 
