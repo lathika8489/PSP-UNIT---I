@@ -85,10 +85,11 @@ Three reasons for using algorithms are efficiency, abstraction and reusability.
 
 
 >## **Building Blocks**
-<p><div align="justify"> An Algorithm is an effective method that can be expressed within a finite amount of space and time and in a well-defined formal language for calculating a <i><b>function</b></i>. Starting from an initial <i><b>State</b></i> and initial input, the <i><b>Instructions</b></i> decribe a computation that, when executed, proceeds through a finite number of well-defined sucessive states, eventually producing "output" and terminating at final ending stage.</div></p>
-<p><div align="justify">  An <i><b>Instruction</b></i> is a single operation, that describes a computation. When it is executed it is converted from one state to other.</div></p>
-<p><div align="justify">  The<i><b> State </b></i> of an algorithm is defined as its condition regarding stored data.The state shows its current values or contents</div></p>. We can express our needs to computer using the algorithms. Algorithms includes basic building blocks, That is used to express any kind of the task to the computer.
-<p><div align="justify">Control flow is the order in which individual statements, instructions or function calls of an algorithm are executed or evaluated</div></p>
+<p><div align="justify">&nbsp&nbsp An Algorithm is an effective method that can be expressed within a finite amount of space and time and in a well-defined formal language for calculating a <i><b>function</b></i>. Starting from an initial <i><b>State</b></i> and initial input, the <i><b>Instructions</b></i> decribe a computation that, when executed, proceeds through a finite number of well-defined sucessive states, eventually producing "output" and terminating at final ending stage.</div></p>
+<p><div align="justify">&nbsp&nbsp An <i><b>Instruction</b></i> is a single operation, that describes a computation. When it is executed it is converted from one state to other.</div></p>
+<p><div align="justify">&nbsp&nbsp The<i><b> State </b></i> of an algorithm is defined as its condition regarding stored data.The state shows its current values or contents</div></p>.
+<p><div align="justify">&nbsp&nbsp Control flow is the order in which individual statements, instructions or function calls of an algorithm are executed or evaluated. For Complex problems our goal is divide the task into smaller and simpler functions during algorithm design. So a set of related sequence os steps, part of a larger algorithm is known as <b><i>functions.</i></b></div></p>
+<p><div align="justify">&nbsp&nbsp We can express our needs to computer using the algorithms. Algorithms includes basic building blocks, That is used to express any kind of the task to the computer.
 <p><div align="justify">Building Blocks of Algorithms are,<br/>
 1. Instructions/ Statements<br/>
 2. State<br/>
