@@ -1,4 +1,11 @@
-# UNIT - 1
+# **<center> GE8151 PROBLEM SOLVING AND PYTHON PROGRAMMING </center>**
+![compiler and interpreter](./img/wc.png)
+## <center>**UNIT I ALGORITHMIC PROBLEM SOLVING**</center>
+<div align="justify"><p><i>Algorithms - building blocks of algorithms (instruction/statements, state, control flow, functions) - notation (pseudo code, flowchart, programming language) </b> algorithmic problem solving, simple strategies for developing algorithms (iteration, recursion)
+</div></p></i>
+<p><div align="justify"><b><i>Illustrative programs: find minimum in a list, insert a card in a list of sorted cards, guess an integer number in a range, Towers of Hanoi.</b></i></p>
+
+https://www.memcode.com/courses/2283 - 20+ flashcards to review the contents of this unit.# UNIT - 1
 
 ## ALGORITHMIC PROBLEM SOLVING
 Algorithms - building blocks of algorithms (instruction/statements, state, control flow, functions) - notation (pseudo code, flowchart, programming language) </b> algorithmic problem solving, simple strategies for developing algorithms (iteration, recursion)
