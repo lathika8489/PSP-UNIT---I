@@ -46,11 +46,8 @@ https://www.memcode.com/courses/2283 - 20+ flashcards to review the contents of 
 * <p><div align="justify"><b><i>Algorithm</b></i>: Algorithm can also be defined a set of rules that precisely defines a sequence of operations. </div></p>
 * <p><div align="justify"><b><i>Statement</b></i> A statement is the smallest standalone element of an imperative programming language that expresses some action to be carried out. </div></p>
 * <div align="justify"><b><i><p>Control Flow</b></i> is the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated. </div></p>
-* <p><div align="justify"><b><i>Tuple</b></i> is a collection of objects which ordered and immutable. Creating a tuple is as simple as putting different comma-separated values. </div></p>
-* <p><div align="justify"><b><i>Comments</b></i> in Python are the lines in the code that are ignored by the compiler during the execution of the program. Comments enhance the readability of the code and help the programmers to understand the code very carefully. </div></p>
-* <p><div align="justify"><b><i>Operators</b></i>in general are used to perform operations on values and variables. These are standard symbols used for the purpose of logical and arithmetic operations. </div></p>
-* <p><div align="justify"><b><i>Operator precedence</b></i> determines how operators are parsed concerning each other. Operators with higher precedence become the operands of operators with lower precedence. </div></p>
-* <p><div align="justify"><b><i>Function</b></i> is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.   </div></p>
+* <p><div align="justify"><b><i>Pseudocode</b></i> Pseudocode is an artificial and informal language that helps programmers develop algorithms. </div></p>
+* <p><div align="justify"><b><i>Flowcharts</b></i> Flowcharts are a graphical means of representing an algorithm. </div></p>
 
 >## **Algorithmic Problem Solving**
 ***
@@ -59,30 +56,30 @@ https://www.memcode.com/courses/2283 - 20+ flashcards to review the contents of 
 Algorithm can also be defined a set of rules that precisely defines a sequence of operations.
 Algorithms can perform calculation, data processing and automated reasoning tasks.</div></p>
 
-```Real Life Example
+**Real Life Example**<br/>
 Procedure to cook Bread Toast
+```
 Step 1: Grab a loaf of bread
 Step 2: Get a pan and place it on the stove let it heat
 Step 3: Pour some oil on the pan and wait for oil to be heated
 Step 4: Put a slice on the pan and roast until it become brown in shade
 Step 5: Turn the slice and roast until it become brown in shade
 Step 6: Get the toasted bread from the pan and serve it on a plate with anything or nothing
-The above procedure that explains “how to make a bread toast” and what are all the requirements before we start the procedures. We can code this procedure or algorithm in any programing language of your choice and simulate as results on the computer display. Else we can feed this procedure to the robot with proper instructions and we make the robot to do the bread toast for us. 
-Example :
+
+The above procedure that explains “how to make a bread toast” and what are all the requirements before we start the 
+procedures. We can code this procedure or algorithm in any programing language of your choice and simulate as results
+on the computer display. Else we can feed this procedure to the robot with proper instructions and we make the robot 
+to do the bread toast for us.
+```
+
+**Example :**<br/>
 Algorithm for adding two numbers:
+```
 Step 1 : Get the 2 numbers from the user as input.
 Step 2 : Perform addition of those 2 numbers.
 Step 3 : Store the answer for display.
 Step 4 : Display the stored value to the user.
 ```
-```algorithm
-Step 1: Start
-Step 2: READ num1, num2
-Step 3: result = num1+num2
-Step 4: DISPLAY result
-Step 5: Stop
-```
-
 
 ## Qualities of an Algorithm
 - **Accuracy**: Algorithm should provide accurate result
@@ -105,46 +102,6 @@ Step 5: Stop
 ## Disadvantage
 - It is difficult to show branching and looping statements.
 - It is time consuming, algorithm needs to be developed first which is then converted to program.
-
-## Qualities of an Algorithm
-- **Accuracy**: Algorithm should provide accurate result
-- **Memory**: It should require minimum computer memory
-- **Time**: It should take finite amount of time.
-- **Sequence**: The procedure of an algorithm must be in sequential form
-
-## Characteristics/Properties of Algorithm
-**Input**: All the algorithms should have some input. The logic of the algorithm should work on this input to give the desired result.<br />
-**Finiteness**: An algorithm must always terminate after a finite number of steps.<br />
-**Definiteness**: Every step of the algorithm should be clear and not any ambiguity.<br />
-**Effectiveness**: Every step in the algorithm should be easy to understand and can be implemented using any programming language.<br />
-**Output**: At least one output should be produced from the algorithm based on the input given.<br />
-
-## Advantage
-- It is a stepwise description of a solution, which makes easy to understand.
-- It is not dependent on any programming language.
-- It is easier for programmer to convert into an actual program.
-
-## Disadvantage
-- It is difficult to show branching and looping statements.
-- It is time consuming, algorithm needs to be developed first which is then converted to program.
-### **Real Life Example**
-<p>Procedure to cook Bread Toast<b>
-Step 1 : Grab a loaf of bread
-Step 2 : Get a pan and place it on the stove let it heat<b>
-Step 3 : Pour some oil on the pan and wait for oil to be heated<b>
-Step 4 : Put a slice on the pan and roast until it become brown in shade<b>
-Step 5 : Turn the slice and roast until it become brown in shade<b>
-Step 5 : Get the toasted bread from the pan and serve it on a plate with anything or nothing. 
-
-The above procedure that explains “how to make a bread toast” and what are all the requirements before we start the procedures. We can code this procedure or algorithm in any programing language of your choice and simulate as results on the computer display. Else we can feed this procedure to the robot with proper instructions and we make the robot to do the bread toast for us. 
-
-Example :
-Algorithm for adding two numbers:
-Step 1 : Get the 2 numbers from the user as input.
-Step 2 : Perform addition of those 2 numbers.
-Step 3 : Store the answer for display.
-Step 4 : Display the stored value to the user.
-```
 
 <div align="justify">It was created by Guido van Rossum during <b><i>1985-1990</b></i>. Python got its name from <b><i>“Monty Python’s flying circus”</b></i>. Python was released in the year 2000.</div>
 
