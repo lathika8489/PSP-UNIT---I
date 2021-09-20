@@ -679,3 +679,212 @@ PRINT result
 End
 EndTASK
 
+# Problem Statement
+**we will see  Python program to find the smallest number in a List.**
+### For example
+- If the list is [15, 20, 10, 16] then the program should display number 10 as the output (the smallest number in the given list).
+
+## Python Code
+~~~python
+#find minimum of two numbers
+# a and b are parameters''
+
+
+def find_min(a, b):
+    if a < b:
+        return a
+    return b
+
+
+print("Enter two values :")
+a = int(input())
+b = int(input())
+print("Minimum number is ", find_min(a, b))
+~~~
+
+~~~python
+#find minimum of three numbers
+
+def find_min(a, b):
+    if a < b:
+        return a
+    return b
+
+# a, b and c are parameters
+def min_of_three(a, b, c):
+    minVal = find_min(a, b)
+    if c < minVal:
+        return c
+    return minVal
+
+
+print("Enter three numbers: ")
+a = int(input())
+b = int(input())
+c = int(input())
+
+print("Minimum number is ", min_of_three(a, b, c))
+~~~
+
+
+~~~python
+# find minimum of a list
+def min_of_list(aList):
+    if not aList:
+        return None
+    minVal = aList[0]
+    for number in aList[1:]:
+        if number < minVal:
+            minVal = number
+    return minVal
+
+
+myList = []
+limit = int(input("Enter the limit: "))
+print("Enter the elements:\n")
+for i in range(limit):
+    element = int(input())
+    myList.append(element)
+
+print("Minimum of list is ", min_of_list(myList))
+~~~
+## Problem Statement
+
+**Ramesh want to insert the new cards into the sorted cards**
+* Insert a card must be in correct position
+
+## Python Code
+
+```python
+order = {
+    'A': 1, '2': 2, '3': 3, '4': 4,
+    '5': 5, '6': 6, '7': 7, '8': 8,
+    '9': 9, '10': 10,
+    'J': 11, 'Q': 12, 'K': 13
+}
+
+
+def insertCard(deck, newCard):
+    for card in deck:
+        if order[card] > order[newCard]:
+            index = deck.index(card)
+            deck.insert(index, newCard)
+            break
+    return deck
+
+
+deck = ['2', '5', '8', '10', 'J', 'K']  # initial set of cards
+print("deck = ", deck)
+newCard = input("Enter the new card to be inserted:")  # get the new card
+insertCard(deck, newCard)
+print(deck)
+
+```
+## Problem Statement
+
+___
+**Shankar and Vijay are playing a game of integers in which Shankar chooses an integer in his mind (can be any integer value with in range of 1 to 100 ) and Vijay had to find that integer through some guesses.**
+___
+
+_Shankar can provides 3 hints to Vijay ,each hint can be one of the below types:_
+* Type 1 : Guess is Low
+* Type 2 : Guess is High
+* Type 3 : You guessed my number!
+
+Now Vijay has to make some guesses in order to find Shankar's integer._
+___
+
+**Note:**  vijay is given only 10 chances to guess the number and if vijay wins the game then return true otherwise return false.
+
+
+## Python Code
+```python
+"""Guess the Number Try to guess the secret number based on hints."""
+
+import random
+
+def ask_for_guess():
+    '''returns an integer number as guessed by the user'''
+    while True:
+        guess = input('> ')  # Enter the guess.
+
+        if guess.isdecimal():
+            return int(guess)  # Convert string guess to an integer.
+        print('Please enter a number between 1 and 100.')
+
+print('*** Guess the Number ***')
+print()
+secretNumber = random.randint(1, 100)  # Select a random number.
+print('I am thinking of a number between 1 and 100.')
+
+for i in range(10):  # Give the player 10 guesses.
+    print('You have {} guesses left. Take a guess.'.format(10 - i))
+
+    guess = ask_for_guess()
+    if guess == secretNumber:
+        break  # Break out of the for loop if the guess is correct.
+
+    # Offer a hint:
+    if guess < secretNumber:
+        print('Your guess is too low.')
+    if guess > secretNumber:
+        print('Your guess is too high.')
+
+# Reveal the results:
+if guess == secretNumber:
+    print('Yay! You guessed my number!')
+else:
+    print('Game over. The number I was thinking of was', secretNumber)
+```
+## Problem Statement
+
+**The mission is to move all the disks to some another tower without violating the sequence of arrangement.**
+_A few rules to be followed for Tower of Hanoi are_
+
+- Only one disk can be moved among the towers at any given time.
+- Only the "top" disk can be removed.
+- No large disk can sit over a small disk.
+
+**Tower of Hanoi puzzle with n disks can be solved in minimum 2n−1 steps**
+
+## Python Code
+
+```python
+# Tower of Hanoi
+
+# one disk is tower A, destination is tower B, intermediate is tower C
+print("Tower of Hanoi - with one disk")
+source = 'A'
+destination = 'B'
+print("Move top disk from ", source, " to ", destination)
+print()
+
+# Two disk is at tower A, destination is tower B, intermediate in tower C
+print("Tower of Hanoi - with 2 disk")
+source = 'A'
+destination = 'B'
+temp = 'C'
+print("Move top disk from ", source, " to ", temp)
+print("Move top disk from ", source, " to ", destination)
+print("Move top disk from ", temp, " to ", destination)
+print()
+
+
+# In a recursive way
+
+def tower_of_hanoi(n, fromTower, toTower, tempTower):
+    if n == 1:
+        print("Move top disc from ", fromTower, " to ", toTower)
+    else:
+        # Move n-1 disks from source to temp
+        tower_of_hanoi(n - 1, fromTower, tempTower, toTower)
+        # Move top disk from source to destination
+        print("Move top disc from ", fromTower, " to ", toTower)
+        # Move n-1 disks from temp to the destination
+        tower_of_hanoi(n - 1, tempTower, toTower, fromTower)
+
+
+n = int(input("Enter number of disks:"))
+tower_of_hanoi(n, 'A', 'B', 'C')
+
+```
