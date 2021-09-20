@@ -108,13 +108,13 @@ Transition from one process to another process under specified condition with in
 **Control flow:**
 The process of executing the individual statements in a given order is called control flow.
 The control can be executed in three ways
-1.              sequence
-2.              selection
-3.              iteration
+1. Sequence
+2. Selection
+3. Iteration
  
 **Sequence:**
 Sequential control means that the steps of an algorithm are carried out in a sequential manner, where each step is executed exactly once.
-![Sequence](img/sequence.png) 
+ 
 ```
 Example: Algorithm to convert Centigrade to Fahrenheit
 
@@ -124,8 +124,7 @@ Step 2: Convert the Centigrade to Fahrenheit using the formula
 Step 3: Print the Celsius and Fahrenheit value
 ```
 ```
-Example:
-Add two numbers:
+Example: Add two numbers:
 Step 1: Start
 Step 2: get a,b
 Step 3: calculate c=a+b
@@ -137,7 +136,6 @@ A selection statement causes the program control to be transferred to a specific
 If the conditional test is true, one part of the program will be executed, otherwise it will execute the other part of the program.
 Algorithms can use selection to determine a different set of steps to execute based on a Boolean expression.If the conditional test is true, one part of the algorithm will be executed, otherwise it will execute the other part of the algorithm.
 
-![Selection](img/selection.png)
 ```
 # Example: Algorithm to find Greatest of two numbers
 
@@ -148,10 +146,8 @@ Step 3: IF(A>B) then
 		Else 
 			Print B is big
 ```
- 
- 
-Example
-Write an algorithm to check whether he is eligible to vote?
+  
+Example: Write an algorithm to check whether he is eligible to vote or not
 Step 1: Start
 Step 2: Get age
 Step 3: if age >= 18 print “Eligible to vote”
@@ -162,7 +158,6 @@ Step 6: Stop
 In some programs, certain set of statements are executed again and again based upon conditional test. i.e. executed more than one time. This type of execution is called looping or iteration.
 Algorithms often use repetition to execute steps a certain number of times or until a certain condition is met.
 
-![Iteration](img/iteration.png)
 
 ```
 Example: Print 'Hello world' 5 times
@@ -177,9 +172,8 @@ Step 4 : Stop
 
 ```
  
-Example
- 
-Write an algorithm to print all natural numbers up to n
+Example : Write an algorithm to print all natural numbers up to n
+
 Step 1: Start
 Step 2: get n value.
 Step 3: initialize i=1
@@ -189,22 +183,20 @@ Step 6: go to step 4
 Step 7: Stop
  
 **Functions:**
- 
-   Function is a sub program which consists of block of code(set of instructions) that performs a particular task.
-   For complex problems, the problem is been divided into smaller and simpler tasks during algorithm design.
+Function is a sub program which consists of block of code(set of instructions) that performs a particular task.
+For complex problems, the problem is been divided into smaller and simpler tasks during algorithm design.
  
 #### Benefits of Using Functions
- 
-<p>Reduction in line of code</p>
-<p>code reuse</p>
-<p>Better readability</p>
-<p>Information hiding</p>
-   Easy to debug and test
-   Improved maintainability
- 
-Example:
- 
-Algorithm for addition of two numbers using function
+1. Reduction in line of code
+2. Code reuse
+3. Better readability
+4. Information hiding
+5. Easy to debug and test
+6. Improved maintainability
+
+``` 
+Example: Algorithm for addition of two numbers using function
+
 Main function()
 Step 1: Start
 Step 2: Call the function add()
@@ -216,220 +208,47 @@ Step 2: Get a, b Values
 Step 3: add c=a+b
 Step 4: Print c
 Step 5: Return
+```
+>## **Notations**
+***
+## **<u>Notation</u>**
+<p><div align="justify">&nbsp There are different notation of representing an algorithms.<div></p>
+	1. Pseudocode
+	2. Flowchart
+	3. Programming Language
 
+### **Pseudocode
+Pseudo code is an informal way of programming description that does not require any strict programming language syntax. It is an outline of a program written in a form that can be easily converted into real programming statements.
 
+```
+A pseudocode to add two numbers and display the results:
+	
+    READ num1,num2
+	Result=num1+num2
+	PRINT result.
 
+```
 
-Control Flow
+## Basic Guidelines for Writing Pseudocode
+- Statements should be written in English and programming language independent.
+- Steps must be understandable and it should not be difficult
+- Each instruction should be written in a separate line
+- Keywords must be capitalized
+- Each set of instruction must be written from top to bottom
+- It should be easy for translating the design into code in any programming language.
 
-In computer science, control flow (or flow of control) is the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated. 
+## Advantages
+- Pseudocode is language independent, it can be used by most of the programmers
+- It becomes easy to develop a program.
+- It is compact and easy to modify.
 
-Control Flow Statement
-Within an imperative programming language, a control flow statement is a statement which execution results in a choice being made as to which of two or more paths to follow.
+## Disadvantages
+- It does not provide visual representation of the program logic.
+- No standard rules for writing pseudocode.
+- It is not used to understand the flow of the program control.
 
-Control Flow Statement Categories
- 
-●	Continuation at a different statement (unconditional branch or jump)
-●	Executing a set of statements only if some condition is met (choice - i.e., conditional branch)
-●	Executing a set of statements zero or more times, until some condition is met (i.e., loop - the same as conditional branch)
-●	Executing a set of distant statements, after which the flow of control usually returns (subroutines, coroutines, and continuations)
-●	Stopping the program, preventing any further execution (unconditional halt)
-
-Primitive Control Statements
-
-●	Labels
-A label is an explicit name or number assigned to a fixed position within the source code, and which may be referenced by control flow statements appearing elsewhere in the source code. A label marks a position within source code, and has no other effect.
-
-Eg:
-LET X = 3
-PRINT X
-
-●	Goto
-The goto statement (a combination of the English words go and to, and pronounced accordingly) is the most basic form of unconditional transfer of control.
-Eg:
-goto label
-
-●	Subroutines
-A piece of code was written once and then used many times from various other places in a program. The terminology for subroutines varies; they may alternatively be known as routines, procedures, functions (especially if they return results) or methods (especially if they belong to classes or type classes).
-
-●	Sequence
-In structured programming, the ordered sequencing of successive commands is considered one of the basic control structures, which is used as a building block for programs alongside iteration, recursion and choice.
-
-●	Other Control Flow Statements
-
-○	Choice
-■	If-then-(else) statements
-■	Case and switch statements
-○	Loops
-■	Count-controlled loops
-■	Condition-controlled loops
-■	Collection-controlled loops
-
-Functions
-
-module A small component of a computer program that may contain several routines. parameter In computer programming, a parameter is a value that is passed into a function or procedure. procedure A section of computer code that performs a specific task.
-
-Functions "Encapsulate" a task (they combine many instructions into a single line of code). Most programming languages provide many built in functions that would otherwise require many steps to accomplish, for example computing the square root of a number. In general, we don't care how a function does what it does, only that it "does it"!
-
-When a function is "called" the program "leaves" the current section of code and begins to execute the first line inside the function. Thus the function "flow of control" is:
-
-1.	The program comes to a line of code containing a "function call".
-2.	The program enters the function (starts at the first line in the function code).
-3.	All instructions inside of the function are executed from top to bottom.
-4.	The program leaves the function and goes back to where it started from.
-5.	Any data computed and RETURNED by the function is used in place of the function in the original line of code.
-
-Why do we Write Functions?
-
-1.	They allow us to conceive of our program as a bunch of sub-steps. (Each sub-step can be its own function. When any program seems too hard, just break the overall program into sub-steps!)
-2.	They allow us to reuse code instead of rewriting it.
-3.	Functions allow us to keep our variable namespace clean (local variables only "live" as long as the function does). In other words, function_1 can use a variable called i, and function_2 can also use a variable called i and there is no confusion. Each variable i only exists when the computer is executing the given function.
-4.	Functions allow us to test small parts of our program in isolation from the rest. This is especially true in interpreted languages, such as Matlab, but can be useful in C, Java, ActionScript, etc.
-
-Steps to Writing a Function
-
-1.	Understand the purpose of the function.
-2.	Define the data that comes into the function from the caller (in the form of parameters)!
-3.	Define what data variables are needed inside the function to accomplish its goal.
-4.	Decide on the set of steps that the program will use to accomplish this goal. (The Algorithm)
-
-Types of Functions
-
-●	Parameterised Functions
-○	This a functions that receives input while calling. It may or may not return any value to the caller.
-
-●	Non-Parameterised Function 
-○	This a functions does not receive any input while calling. It may or may not return any value to the caller.
-
-Notation of algorithm
-
-Algorithms are basically a set of instructions that, if correct and if followed carefully, produce some desired result. Since they are sets of instructions, they are generally presented in such a way that that the step-by-step nature of how they should be followed is readily apparent. The two most common representations are pseudocode and flowcharts.
-
-Algorithms can be thought of as the recipe for taking the general solution for a class of problem and applying it to a specific instance of a problem covered by that class. For instance, the class of problem might be to find the surface area of a sphere given its radius. Through some problem solving means - perhaps by performing the fundamental calculus computation or perhaps simply by looking up the equation in a math book - we determine that the general solution to the problem is that the area is four times pi times the square of the radius. We can then use this general solution and create an algorithm that permits use to compute the surface area of a specific sphere:
-
-TASK: Compute the surface area of a sphere
-GET: radius
-SET: area = 4pi*radius*radius
-
-
-Pseudocode
-Pseudocode is an artificial and informal language that helps programmers develop algorithms. Pseudocode is a "text-based" detail (algorithmic) design tool.
-
-The rules of Pseudocode are reasonably straightforward. All statements showing "dependency" are to be indented. These include while, do, for, if, switch. Examples below will illustrate this notion.
-
-
-Rules for Pseudocode Writing
-
-
-1.	For looping and selection, The keywords that are to be used include Do While...EndDo; Do Until...EndDo; Case...EndCase; If...Endif; Call ... with (parameters); Call; Return ....; Return; When; Always use scope terminators for loops and iteration.
-2.	As verbs, use the words Generate, Compute, Process, etc. Words such as set, reset, increment, compute, calculate, add, sum, multiply, ... print, display, input, output, edit, test , etc. with careful indentation tend to foster desirable pseudocode.
-3.	Do not include data declarations in your pseudocode.
-
-Examples:
-
-For finding the given number is odd or even:
-
-Input any number
-Compute modulo for that  number
-	If modulo value equals to zero
-		Print “The number is Even”
-	Else
-		Print “The number is Odd”
-End
-
-To analyze the academic performance of the student
-
-initialize passes to zero
-initialize failures to zero
-initialize student to one
-while student counter is less than or equal to ten
-input the next exam result
-if the student passed
-add one to passes
-Else
-add one to failures
-add one to student counter
-print the number of passes
-print the number of failures
-if eight or more students passed
-print "raise tuition"
-
-A Recommended Pseudocode Format
-To aid in communication - particularly between you and the grader (the value of which should be relatively obvious) it is recommended that the problem be decomposed into a set of hierarchical tasks. The lowest-level tasks should either be tasks that are very straightforward to implement directly in C (using your level of knowledge) or the specific instructions for performing the task should be provided. By beginning each line with one of the keywords discussed below, the chance for miscommunication between you and the grader is greatly diminished.
-Documentation Keywords
-Documentation keywords describe what needs to be done or provides information about why something is being done. You will quickly discover that, if you have done a decent job of writing your pseudocode, that these lines make very useful comment lines in your final code.
-●	TASK:
-●	A TASK statement is something that the program must perform but that is described at a level more abstract than what can be coded directly. One way to think of it is that you break a problem down into a set of TASKs. Each TASK can, in turn, be broken down into more narrowly defined TASKs. At some point, the TASK can be described in terms of steps that can be directly implemented. From one perspective, anytime a TASK: keyword is used, it means that there should (or at least could) be a subordinate level of the hierarchy which is the pseudocode for that TASK. In practice, that pseudocode need not be present if the TASK is sufficiently narrow that the person implementing it can go directly from the TASK description to the actual code without the benefit of the detailed steps.
-●	 
-●	REM:
-●	A REM statement is merely a remark or comment. They are useful if the TASK statement proves to be insufficient to convey all the desired information or if the reason that something is done or why it works is not obvious..
-Action Keywords
-Action keywords are the lines that actually do the work. There are three basic actions that can be carried out: changing the value stored at some location in memory, getting input from some device, or generating output to some device. We will use the SET, GET, and PUT keywords for these actions respectively.
-●	SET:
-This is an "action" keyword that denotes performing some operation that changes a value in memory. The most common example would be the evaluation of some equation.
-●	PUT:
-This is an "action" keyword that denotes an output operation, generally to the screen. If the destination is anything other than the screen, such as a file or the serial port, then that should be explicitly stated. 
-●	GET:
-This is an "action" keyword that denotes in input operation, generally from the keyboard. It is generally understood that there is an implied SET action involved where the value brought in gets stored in some memory location. If the source is anything other than the keyboard, such as a file or the serial port, then that should be explicitly stated.
-Flow Control Keywords
-While the action keywords perform the actual work, they are insufficient in and of themselves to write all but the most trivial programs. Of the three structured programming constructs, the action keywords are only sufficient to implement the first of them, namely a sequence of instructions. A program's true power comes from the other two - selection and repetition - because they give it the ability to select whether a particular action will actually be carried out based on the information made available to it at the time that it is executed. This ability is the result of controlling the flow of the program which is the purpose of the flow control keywords.
-Because flow control is a more complex task that merely executing a single statement, all but the simplest flow control keywords are used in groups and there are some options in how to use them depending on the specific situation.
-Selection - Case 1
-●	SEL: (test condition)
-○	TRUE:
-■	Statement(s) to be executed if test condition is TRUE
-○	FALSE
-■	Statement(s) to be executed if test condition is FALSE
-Selection - Case 2
-●	IF: (test condition)
-○	Statement(s) to be executed if test condition is TRUE
-●	ELSE:
-○	Statement(s) to be executed if test condition is FALSE
-The advantage of Case 1 is that it clearly identifies the block as a selection construct, but it is a bit more involved than is usually necessary. The format of Case 2 is very close to the format of the actual C code that would result and is therefore a bit more straightforward to convert in the coding process, but not enough so as to be a significant factor.
-
-In a legal outline, the ELSE: statement in Case 2 would be numbered one more than the IF: statement - in other words, if the IF: statement was numbered 3.4.2.6) then the ELSE: statement would be numbered 3.4.2.7). This can be useful or confusing depending upon how you think of it. If you think of the test condition controlling a single selection construct, then it would be nice if the controlling expression was one level in the outline and everything it controls was at a lower level. So this could be a bit confusing. However, this format actually emphasizes the fact that, in C, an "else" statement truly is a separate statement and that it must immediately follow an "if" statement that is at the same level of control. Neither convention is significantly better than the other - and you should quickly get comfortable with whichever you choose to use.
-Repetition - Case 1
-●	LOOP:
-○	WHILE: (test condition)
-○	Statement(s) to be executed if test condition is TRUE
-Repetition - Case 2
-●	LOOP:
-○	Statement(s) to be executed if test condition is TRUE
-○	WHILE: (test condition)
-These two cases map directly into the while() and do/while() looping constructs of the C language. In Case 1, the test condition is evaluated prior to making the first pass through the statements controlled by it and, as a result, the possibility exists that those statements won't be executed even once. The only difference in Case 2 is that the statements controlled by the test condition are executed one time and the test is evaluated after that first pass. If the test condition is TRUE then another pass is made - and the test condition evaluated at the end of that and each succeeding pass until the test finally fails.
-While the two cases above are more than adequate to represent any looping logic - in fact, either one of them by itself is sufficient, just more cumbersome in some cases - the logic is sometime clearer to the reader if it is expressed in terms of repeating the loop until some some condition is met - meaning that the loop is terminated as soon as the test condition becomes TRUE. 
-Repetition - Case 3
-●	LOOP:
-○	UNTIL: (test condition)
-○	Statement(s) to be executed if test condition is FALSE
-Repetition - Case 4
-●	LOOP:
-○	Statement(s) to be executed if test condition is FALSE
-○	UNTIL: (test condition)
-Although C does not support a "loop until" construct (some languages do) converting Case 3 to an equivalent form of Case 1 is trivial - you simply invert the test condition. Similarly, Case 4 can be converted to Case 2 by the same mechanism.
-Just as the selection construct can be streamlined, so too can a couple of the repetition constructs.
-Repetition - Case 5 (streamlined version of Case 1)
-●	WHILE: (test condition)
-○	Statement(s) to be executed if test condition is TRUE
-Repetition - Case 6 (streamlined version of Case 3)
-●	UNTIL: (test condition)
-○	Statement(s) to be executed if test condition is FALSE
-Streamlining the other two is more difficult because, since the test comes at the end of the statement within the loop, it is very useful to mark the beginning of those statements in such a way that the fact that it is a loop is readily apparent to the reader. The LOOP: statement does that about as well as any other option would.
-As you code loops, you will discover that it is frequently the case that there are steps that are logically associated with the loop but which must reside outside of the loop code. The most common by far is the need to initialize certain variables, especially counters, prior to entering the loop. Much less frequently, it is necessary to perform some cleanup tasks immediately after the loop is exited. A pseudocode construct that gathers all of these together so that their association is obvious is the following:
-Repetition - Case 7
-●	REP:
-○	PRE:
-■	Statement(s) to be executed prior to entering loop
-○	WHILE: (test condition)
-■	Statement(s) to be executed if test condition is TRUE
-○	LOOP:
-○	POST:
-■	Statement(s) to be executed prior after the loop is finished
-The above can be easily altered so as to cover all four of the first four cases. As shown, it implements Case 1. By switching the WHILE: and LOOP: statements it implements Case 2. Similarly, Case 3 is obtained simply by changing the WHILE: to UNTIL: and swapping the UNTIL: with the LOOP: then generated Case 4.
-
-
-Examples
-Pseudo Code for Sum of two numbers:
+```
+Example: Pseudo Code for Sum of two numbers:
 
 TASK : Sum of two numbers
 READ num1
@@ -440,7 +259,8 @@ EndSUM
 DISPLAY Sum
 End
 EndTASK
-
+```
+```
 Pseudocode to find given number is odd or even
 
 TASK: Find Odd or Even:
@@ -455,7 +275,8 @@ Mod = number % 2;
 		PRINT “Number is Odd”
 	EndTASK
 Pseudocode to find factorial of given number
-
+```
+```
 TASK: Finding Factorial of a number
 READ number
 Initialize Fact to 0 and CurrentVal to number
@@ -470,6 +291,7 @@ Else
 EndWHILE
 End
 EndTASK.
+```
 Flowcharts
 Flowcharts are a graphical means of representing an algorithm, as should be expected, they have advantages and disadvantages compared to pseudocode. One of their primary advantages is that they permit the structure of a program to be easily visualized - even if all the text were to be removed. The human brain is very good at picking out these patterns and keeping them "in the back of the mind" as a reference frame for viewing the code as it develops. 
 
@@ -678,9 +500,17 @@ EndFIND_POWER
 PRINT result
 End
 EndTASK
+		  
+## **Illustrative Problems**
+1. Find Minimum in the List
+2. Insert a card in the list of sorted cards
+3. Guess an integer in the range
+4. Tower of Hanoi
 
+		  
+		  
 # Problem Statement
-**we will see  Python program to find the smallest number in a List.**
+**We will see  Python program to find the smallest number in a List.**
 ### For example
 - If the list is [15, 20, 10, 16] then the program should display number 10 as the output (the smallest number in the given list).
 
